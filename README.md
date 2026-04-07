@@ -18,12 +18,18 @@ This security test environment is entirely isolated from any Internet connection
 
 ## Architecture
 
+### Network Diagram
+![Wazuh SIEM Lab Architecture](architecture/wazuh-siem-architecture.png)
+
+---
+
+### Environment Components
 - Wazuh Manager VM (Ubuntu)
 - Windows Domain Controller VM (Named GumChewer)
 - Windows Client VMs
 - Internal-only network (192.168.100.0/24)
 
-All communication is restricted to internal virtual networking.
+All communication between VMs is restricted to internal virtual networking.
 
 ---
 

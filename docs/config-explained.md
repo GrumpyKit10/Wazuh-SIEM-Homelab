@@ -40,6 +40,6 @@ SCA is turned on to test whether the system meets certain benchmarks for securit
 
 ## Lessons Learned
 
-- excessive monitoring of files may lead to decreased performance in virtualized settings.
+- Excessive monitoring of files may lead to decreased performance in virtualized settings.
 - Excessive filtering of Windows Security Logs may prevent essential alerts from being detected.
 - Incremental deployment offers increased stability and troubleshooting capabilities.
