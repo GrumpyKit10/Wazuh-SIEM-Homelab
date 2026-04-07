@@ -187,14 +187,3 @@ This document outlines the step-by-step build process for creating an isolated W
 * Implement alert tuning and detection rules
 * Automate agent deployment via Group Policy
 * Expand monitoring coverage across additional endpoints
-
----
-
-# 💥 Why this works
-
-This document shows:
-
-- You can **design systems**
-- You can **troubleshoot real issues**
-- You understand **networking + AD + SIEM together**
-- You didn’t just follow a YouTube tutorial
