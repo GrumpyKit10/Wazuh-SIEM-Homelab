@@ -1,0 +1,43 @@
+<ossec_config>
+
+	<client>
+		<server>
+			<address>192.168.100.13</address>
+			<port>1514</port>
+			<protocol>tcp</protocol>
+		</server>
+	</client>
+
+<!-- Windows Event Logs -->
+	<localfile>
+		<location>Security</location>
+		<log_format>eventchannel</log_format>
+	</localfile>
+
+	<localfile>
+		<location>System</location>
+		<log_format>eventchannel</log_format>
+	</localfile>
+
+	<localfile>
+		<location>Application</location>
+		<log_format>eventchannel</log_format>
+	</localfile>
+
+	<!-- File Integrity Monitoring (Reduced Scope for Stability) -->
+	<syscheck>
+		<disabled>no</disabled>
+		<frequency>3600</frequency>
+
+		<directories realtime="yes">C:\ProgramData</directories>
+		<directories realtime="yes">C:\Users\Administrator\Desktop</directories>
+	</syscheck>
+
+	<!-- Security Configuration Assessment -->
+	<sca>
+		<enabled>yes</enabled>
+		<scan_on_start>yes</scan_on_start>
+		<interval>12h</interval>
+	</sca>
+
+</ossec_config>
